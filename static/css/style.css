@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header img {
+    margin: 20px;
+    width: 150px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading {
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+.form-control form {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inp-box {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.inp-box input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2), -2px -2px 2px rgba(255, 255, 255, 0.2);
+    background-color: white;
+    width: 85%;
+    text-align: center;
+}
+
+.inp-box input::placeholder {
+    color: black;
+    opacity: 0.5;
+}
+
+.submit {
+    display: block;
+}
+
+.submit input {
+    color: white;
+    background-color: rgb(3, 13, 124);
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.submit input:hover {
+    background-color: rgb(149, 12, 12);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #0c3966;
+}
+
+.dumi
+{
+    width: 100%;
+    height: 90px;
+}
+
+footer .nav li {
+    display: inline;
+    padding: 10px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .url {
+    text-align: center;
+}
+
+.table1 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+table {
+    font-size: medium;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.table1 #t1,
+.table1 #t2 {
+    width: 50%;
+    margin: auto;
+    margin: 60px auto;
+}
+
+.table1 #t1 td,
+.table1 #t1 th,
+.table1 #t2 td,
+.table1 #t2 th {
+    border-bottom: 1px solid #0c3966;
+    padding: 10px;
+    text-align: center;
+}
+
+.table1 #t2 td {
+    width: 50%;
+    text-align: left;
+}
+
+th {
+    background-color: #0c3966;
+    color: white;
+}
+
+td {
+    color: #0c3966;
+}
+
+.team-members .wrap {
+    text-align: center;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px 0px;
+}
+
+.team-members {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(18, 52, 86, 0.7);
+    text-transform: uppercase;
+}
+
+.team-members .text-team-header h1,
+.team-members .text-team-header p {
+    color: white;
+    line-height: 2;
+    padding: 10px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.team-members .team-list ol {
+    list-style-type: none;
+}
+
+.team-members .team-list ol li {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    line-height: 2;
+    font-size: large;
+    font-weight: 700;
+}
+
+.chat-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 10% ;
+}
+.chat-container1 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 35% ;
+}
+.chat-container2 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 10% ;
+}
+.chat-container3 {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 35% ;
+}
+
+.user {
+    color: #000;
+    font-weight: bold;
+}
+
+.assistant {
+    color: #333;
+}   

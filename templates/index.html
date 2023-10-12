@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body background="../static/image/back.jpg">
+
+    <header>
+        <div class="header">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="heads">
+            <h1 class="heading">Phishing Detector</h1>
+        </div>
+        <div class="form-control">
+            <form action="/predict" method="post">
+                <div class="inp-box">
+                    <input type="text" name="url" placeholder="Enter URL">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Predict">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="foot">
+            <p>
+                <ul class="nav">
+                    <li><a href={{ url_for("login") }} >Home</a></li>
+                    <li><a href={{ url_for("about") }}>About</a></li>
+                    <li><a href={{ url_for("team")}}>Team</a></li>
+                </ul>
+            </p>
+            <p>
+                Copyright &copy; 2020-2024. All rights reserved
+            </p>
+            <p>
+                PhishGuard is only for study purpose
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

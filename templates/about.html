@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+    </header>
+    <h1 style="color:black;text-align:center;">About Us</h1>
+
+    <div class="chat">
+        <div class="chat-container">
+            <p class="user">Phishing Site:</p>
+            <p class="assistant">Phishing attacks are one of the most common and devastating forms of cyberattacks. These attacks use various deceptive tactics to trick users into disclosing sensitive information or performing actions that can compromise their security.</p>
+        </div>
+        
+        <div class="chat-container1">
+            <p class="user">PhishGraud:</p>
+            <p class="assistant">PhishGraud is a site that predicts whether a URL is a phishing or legitimate one. The site uses a machine learning-based approach that predicts whether a URL is a phishing or legitimate one. It extracts 24 features from multiple websites' data to make accurate predictions, considering factors such as the frequency of http or https in the URL, the use of redirection, and the length of URLs.</p>
+        </div>
+        
+        <div class="chat-container2">
+            <p class="user">phishing Site:</p>
+            <p class="assistant">Once the model is trained and evaluated, it can be used to predict whether new emails or URLs are phishing attempts. Regular monitoring and updates are necessary to keep up with evolving phishing techniques. It's important to complement machine learning with other security measures for comprehensive protection against phishing attacks, including user education and spam filters.</p>
+        </div>
+        
+        <div class="chat-container3">
+            <p class="user">PhishGraud:</p>
+            <p class="assistant">Interacting with phishing websites can lead to identity theft, financial loss, or other forms of harm. It is crucial for individuals to be cautious while browsing the internet, to verify website authenticity, and to educate themselves about common phishing techniques to protect their personal information and online security.</p>
+        </div>
+    </div>
+    
+    <div class="dumi">
+
+    </div>
+    
+
+    <footer>
+        <div class="foot">
+            <p>
+            <ul class="nav masthead-nav">
+                <li><a href={{ url_for("login") }}>Home</a></li>
+                <li><a href={{ url_for("about") }}>About</a></li>
+                <li><a href={{ url_for("team")}}>Team</a></li>
+            </ul>
+            </p>
+            <p>
+                Copyright &copy; 2020-2024. All rights reserved
+            </p>
+            <p>
+                PhishGuard is only for study purpose
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

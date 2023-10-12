@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/image/back3.jpg">
+    <header>
+        <div class="header">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+    </header>
+    
+    <div class="team-members">
+        <div class="wrap">
+            <div class="text-team-header">
+                <p>
+                    Build an ML model to detect a phishing attack
+                </p>
+                <h1>
+                    Members of Team 8
+                </h1>
+            </div>
+            <div class="team-list">
+                <ol>
+                    <li>ASSACIAN ARUNKUMAR</li>
+                    <li>BLACKHAT BALAKRISHNAN</li>
+                    <li>KILLER KABILAN</li>
+                    <li>RAPTOR RAMANA</li>
+                    <li>PHREAK PRAVEEN</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <p>
+                <ul class="nav masthead-nav">
+                    <li><a href={{ url_for("login") }} >Home</a></li>
+                    <li><a href={{ url_for("about") }}>About</a></li>
+                    <li><a href={{ url_for("team")}}>Team</a></li>
+                </ul>
+            </p>
+            <p>
+                Copyright &copy; 2020-2024. All rights reserved
+            </p>
+            <p>
+                PhishGuard is only for study purpose
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

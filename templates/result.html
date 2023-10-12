@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard</title>
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body background="../static/image/back2.jpg">
+
+    <header>
+        <div class="header">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+    </header>
+
+
+    <div class="wrapper">
+        <div class="url">
+            <h1 class="output">Website : {{ url }}</h1>
+            <br>
+            {% if result == -1 %}
+                <h1 style="color:blue;">Prediction Result: Legitimate Site.</h1>
+            {% else %}
+                <h1 style="color:red;text-align:center;">Prediction Result: Phishing Site</h1>
+            {% endif %}
+        </div>
+
+        <div class="table1">
+            <table id="t2">
+                <th colspan="2">DATASET DESCRIPTION</th>
+                <tr>
+                    <td>Having IP Address</td>
+                    <td>{{ lst[0] }}</td>
+                </tr>
+                <tr>
+                    <td>Shortening Service</td>
+                    <td>{{ lst[1] }}</td>
+                </tr>
+                <tr>
+                    <td>Having @ symbol</td>
+                    <td>{{ lst[3] }}</td>
+                </tr>
+                <tr>
+                    <td>Double slash redirection</td>
+                    <td>{{ lst[4] }}</td>
+                </tr>
+                <tr>
+                    <td>Prefix/suffix</td>
+                    <td>{{ lst[5] }}</td>
+                </tr>
+                <tr>
+                    <td>Having sub-domain</td>
+                    <td>{{ lst[6] }}</td>
+                </tr>
+                <tr>
+                    <td>SSL State</td>
+                    <td>{{ lst[7] }}</td>
+                </tr>
+                <tr>
+                    <td>Abnormal URL</td>
+                    <td>{{ lst[14] }}</td>
+                </tr>
+                <tr>
+                    <td>HTTPS token</td>
+                    <td>{{ lst[11] }}</td>
+                </tr>
+                <tr>
+                    <td>Request URL</td>
+                    <td>{{ lst[10] }}</td>
+                </tr>
+                <tr>
+                    <td>URL of Anchor</td>
+                    <td>{{ lst[11] }}</td>
+                </tr>
+                <tr>
+                    <td>Links in tabs</td>
+                    <td>{{ lst[12] }}</td>
+                </tr>
+                <tr>
+                    <td>Submitting information to email</td>
+                    <td>{{ lst[13] }}</td>
+                </tr>
+                <tr>
+                    <td>I-frame</td>
+                    <td>{{ lst[18] }}</td>
+                </tr>
+                <tr>
+                    <td>Website redirection count</td>
+                    <td>{{ lst[15] }}</td>
+                </tr>
+                <tr>
+                    <td>Status bar customization</td>
+                    <td>{{ lst[16] }}</td>
+                </tr>
+                <tr>
+                    <td>Disabling Right click</td>
+                    <td>{{ lst[17] }}</td>
+                </tr>
+                <tr>
+                    <td>DNS record</td>
+                    <td>{{ lst[20] }}</td>
+                </tr>
+                <tr>
+                    <td>Age of Domain</td>
+                    <td>{{ lst[19] }}</td>
+                </tr>
+                <tr>
+                    <td>Google index</td>
+                    <td>{{ lst[22] }}</td>
+                </tr>
+                <tr>
+                    <td>Links pointing to page</td>
+                    <td>{{ lst[23] }}</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="dumi">
+
+        </div>
+
+    <footer>
+        <div class="foot">
+            <p>
+                <ul class="nav masthead-nav">
+                    <li><a href={{ url_for("login") }} >Home</a></li>
+                    <li><a href={{ url_for("about") }}>About</a></li>
+                    <li><a href={{ url_for("team")}}>Team</a></li>
+                </ul>
+            </p>
+            <p>
+                Copyright &copy; 2020-2024. All rights reserved
+            </p>
+            <p>
+                PhishGuard is only for study purpose
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
